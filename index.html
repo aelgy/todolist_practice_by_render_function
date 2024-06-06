@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice todo list by render function</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <input type="text">
+  <select>
+    <option disabled selected>重要程度</option>
+    <option value="normal">一般</option>
+    <option value="important">重要</option>
+    <option value="urgent">緊急</option>
+  </select>
+  <button onclick="add()">新增</button>
+  <button onclick="exportData()">匯出</button>
+  <div id="root">
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
