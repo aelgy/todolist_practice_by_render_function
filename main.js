@@ -83,7 +83,6 @@ function add() {
   input.value = '';
 }
 
-render()
 
 function exportData() {
   let str = ''
@@ -104,3 +103,15 @@ function exportData() {
   }
 
 }
+
+function saveData() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+  alert("儲存成功！")
+}
+
+if (localStorage.getItem("todos")) {
+  todos = JSON.parse(localStorage.getItem("todos"));
+  render();
+}
+
+render()
